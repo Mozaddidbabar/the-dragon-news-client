@@ -1,0 +1,33 @@
+.login-box {
+  width: 752px;
+  height: 700px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: #fff;
+}
+.login-heading {
+  margin-bottom: 100px;
+  color: var(--dark-02, #403f3f);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.form-group > label {
+  color: var(--dark-02, #403f3f);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.google-btn {
+  margin-top: 50px;
+}
+.google-btn:hover {
+  background-color: rgba(0, 162, 255, 0.574);
+}
