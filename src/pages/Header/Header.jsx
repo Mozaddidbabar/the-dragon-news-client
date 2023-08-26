@@ -2,7 +2,7 @@ import moment from "moment/moment";
 import logo from "../../assets/logo.png";
 
 const Header = () => {
-  console.log("From Header");
+  // console.log("From Header");
   return (
     <div>
       <div className="text-center mt-5">

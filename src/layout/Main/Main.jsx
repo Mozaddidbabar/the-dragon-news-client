@@ -6,13 +6,30 @@ import RightNav from "../../shared/RightNav/RightNav";
 import TopNav from "../../shared/TopNav/TopNav";
 import Headline from "../../shared/Headline/Headline";
 import { Outlet } from "react-router-dom";
+import { useState } from "react";
 
 const Main = () => {
+  const handleSearch = () => {
+    // const [searchText, setSearchText] = useState("");
+    const searchInput = document.querySelector("#search-input");
+
+    console.log(searchInput.innerText);
+  };
   return (
     <>
       <Header></Header>
-      <TopNav></TopNav>
       <Headline></Headline>
+      <TopNav></TopNav>
+      <div className="text-center">
+        <input
+          onKeyDown={handleSearch}
+          className="w-75 p-2 rounded my-2"
+          type="text"
+          name="search"
+          id="search-input"
+          placeholder="Please Search Here"
+        />
+      </div>
       <Container>
         <Row className="d-flex ms-2">
           <Col lg={3}>

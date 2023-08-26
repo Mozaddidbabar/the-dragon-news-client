@@ -3,7 +3,7 @@ import NewsCard from "../../pages/Home/NewsCard/NewsCard";
 
 const Category = () => {
   const { id } = useParams();
-  const category = useLoaderData();
+  const category = useLoaderData() || [];
 
   return (
     <div>

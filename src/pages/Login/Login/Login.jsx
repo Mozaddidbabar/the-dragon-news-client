@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import "./Login.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -6,8 +6,7 @@ import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../../../providers/AuthProvider";
 
 const Login = () => {
-  const { user, setUser, error, googleSignIn, setError, signIn } =
-    useContext(AuthContext);
+  const { setUser, googleSignIn, setError, signIn } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
 

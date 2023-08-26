@@ -32,7 +32,7 @@ const RightNav = () => {
   const handleGitHubLogin = () => {
     githubSignIn()
       .then((result) => {
-        // console.log(result.user);
+        console.log(result.user);
         setUser(result.user);
         // console.log(from);
         navigate(ifALreadyInLogin, { replace: true });

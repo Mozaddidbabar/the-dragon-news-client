@@ -2,12 +2,11 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import "./TopNav.css";
 import { CgProfile } from "react-icons/cg";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 
 const TopNav = () => {
-  const { user, setUser, logOut, setError, error } = useContext(AuthContext);
-
+  const { user, setUser, logOut, setError } = useContext(AuthContext);
   const handleLogout = () => {
     logOut()
       .then(() => {
@@ -53,7 +52,7 @@ const TopNav = () => {
               ) : (
                 <CgProfile className="fs-3 me-2"></CgProfile>
               )}
-              {user?.email ? (
+              {user ? (
                 <>
                   <button
                     onClick={handleLogout}
